@@ -1,0 +1,33 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "HackerNewsBestStoriesAPI",
+    "version": "1.0"
+  },
+  "paths": {
+    "/api/HackerNews/beststories": {
+      "get": {
+        "tags": [
+          "HackerNews"
+        ],
+        "parameters": [
+          {
+            "name": "n",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 10
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  },
+  "components": { }
+}
